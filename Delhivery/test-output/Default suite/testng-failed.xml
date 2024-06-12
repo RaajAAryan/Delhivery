@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Script.OTPHardCoded">
+      <class name="Script.OTP_Test">
         <methods>
+          <include name="testContinueBtnAndEnterMobileNumber"/>
+          <include name="startServer"/>
+          <include name="stopService"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Script.OTPHardCoded -->
+      </class> <!-- Script.OTP_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
